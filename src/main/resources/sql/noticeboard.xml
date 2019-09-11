@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="noticeboard">
+	<select id="test" resultType="Integer">
+  	 	 select 1 as cnt
+  	</select>
+  
+  	<select id="select" resultType="com.java.web.HomeBean">
+  		select `NO`, `TITLE`, `TEXT` from noticeboard where `DELYN` = 'N'
+  	</select>
+  	
+  	<insert id="insert" parameterType="com.java.web.HomeBean">
+  		insert into noticeboard (`TITLE`, `TEXT`) values (#{title}, #{text})
+  	</insert>
+  	
+  	<update id="update" parameterType="com.java.web.HomeBean">
+  		UPDATE noticeboard SET `TITLE` = #{title}, `TEXT` = #{text} where `NO` = ${no}
+  	</update>
+  	
+  	<update id="delete" parameterType="com.java.web.HomeBean">
+  		UPDATE noticeboard SET `DELYN` = 'Y' where `NO` = ${no}
+  	</update>
+</mapper>

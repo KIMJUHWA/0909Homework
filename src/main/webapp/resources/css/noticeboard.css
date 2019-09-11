@@ -1,0 +1,32 @@
+@charset "UTF-8";
+html, body, h1 {margin: 0; padding: 0;}
+.container {width: 90%; margin: 0 auto;}
+input, label {
+	height: 38px; 
+	font-size: 1rem;
+	font-family: "tahoma";
+}
+input {
+	margin: 10px; 
+	padding: 0px 10px; 
+	box-sizing: border-box;
+	height: 36px !important;
+}
+#title {width: 20%;}
+#text {width: 40%;}	
+
+button {padding: 10px 15px; margin: 10px 3px; border: none;}
+
+.yellow, tbody tr:hover {background-color: #FFD56A;}
+.blue {background-color: #84B3CB;}
+.pink {background-color: #F7C4CC;}
+tbody tr:hover{cursor: pointer;}
+
+input, table, th, td {border: 1px solid #CCCCCC; font-family: 'Poor Story', cursive;}
+input, button {border-radius: 4px;}
+
+p {padding: 5px 0px;}
+h1 {margin: 30px 0px;}
+
+table {width: 100%; border-collapse: collapse;  text-align: center; margin: 20px 0;}
+th, td {padding: 10px 0;}
